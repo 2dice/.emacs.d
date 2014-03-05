@@ -36,3 +36,8 @@
 ;slime
 (define-key slime-mode-map (kbd "M-c") 'slime-compile-and-load-file)
 (define-key slime-mode-map (kbd "M-C") 'slime-compile-defun)
+
+;expand-region
+(define-key evil-motion-state-map (kbd "<RET>") 'er/expand-region)
+(define-key evil-motion-state-map [(shift return)] 'er/contract-region)
+

@@ -96,3 +96,6 @@
 (push '(slime-repl-mode) popwin:special-display-config)
 ;; Connections
 (push '(slime-connection-list-mode) popwin:special-display-config)
+
+;;;;;;;;;;;;;;;;;;;;expand-region;;;;;;;;;;;;;;;;;;;;
+(require 'expand-region)
