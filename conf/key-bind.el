@@ -1,6 +1,7 @@
 ;;evil-leaderのキーバインド
 (evil-leader/set-leader ",")
 (evil-leader/set-key
+  "/" #'comment-region
   "b" #'helm-buffers-list
   "c" #'dired-create-file
   "d" #'dired
