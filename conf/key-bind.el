@@ -2,6 +2,7 @@
 (evil-leader/set-leader ",")
 (evil-leader/set-key
   "/" #'comment-region
+  "=" #'align-regexp
   "b" #'helm-buffers-list
   "c" #'dired-create-file
   "d" #'dired
