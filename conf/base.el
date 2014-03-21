@@ -15,6 +15,9 @@
                     :background nil :foreground nil
                     :underline "#ffff00" :weight 'extra-bold)
 
+;現在行をハイライト
+(global-hl-line-mode t)
+
 ;行番号表示
 (global-linum-mode t)
 
