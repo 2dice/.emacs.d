@@ -36,6 +36,8 @@
     recentf-ext
     smooth-scrolling
     expand-region
+    flycheck
+    flycheck-pos-tip
     ))
 ;上記パッケージがなければ自動インストール
 (let ((not-installed (loop for x in installing-package-list

@@ -99,3 +99,14 @@
 
 ;;;;;;;;;;;;;;;;;;;;expand-region;;;;;;;;;;;;;;;;;;;;
 (require 'expand-region)
+
+;;;;;;;;;;;;;;;;;;;;Flycheck;;;;;;;;;;;;;;;;;;;;
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(setq flycheck-display-errors-delay 0.3)
+(require 'flycheck)
+
+;;;;;;;;;;;;;;;;;;;;Flycheck-pos-tip;;;;;;;;;;;;;;;;;;;;
+(eval-after-load 'flycheck
+  '(custom-set-variables
+   '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
+
