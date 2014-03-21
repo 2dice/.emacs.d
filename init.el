@@ -63,3 +63,5 @@ backup-directory-alist))
 ;キーバインド
 (load "key-bind")
 
+;C言語設定
+(load "c")
