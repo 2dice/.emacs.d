@@ -43,3 +43,10 @@
 (define-key evil-motion-state-map (kbd "<RET>") 'er/expand-region)
 (define-key evil-motion-state-map [(shift return)] 'er/contract-region)
 
+;smart-compile
+(add-hook 'c-mode-hook
+          '(lambda()
+             (progn
+               (define-key c-mode-map (kbd "M-c") 'smart-compile)
+               )))
+
