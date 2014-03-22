@@ -1,4 +1,3 @@
-
 ;;;;;;;;;;;;;;;;;;;;evil-mode;;;;;;;;;;;;;;;;;;;;
 ;evilの特殊キーバインド設定lisp
 (require 'evil-leader)
@@ -45,7 +44,6 @@
  '(shell-pop-default-directory "~/Documents")
  '(shell-pop-universal-key "M-s") )
 
-
 ;;;;;;;;;;;;;;;;;;;;ediff;;;;;;;;;;;;;;;;;;;;
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
@@ -61,7 +59,6 @@
 (flex-autopair-mode 1)
 (setq flex-autopair-disable-modes
         '(c-mode))
-
 
 ;;;;;;;;;;;;;;;;;;;;recentf;;;;;;;;;;;;;;;;;;;;
 (require 'recentf-ext)
@@ -106,6 +103,43 @@
 
 ;;;;;;;;;;;;;;;;;;;;expand-region;;;;;;;;;;;;;;;;;;;;
 (require 'expand-region)
+
+;;;;;;;;;;;;;;;;;;;;smartchr;;;;;;;;;;;;;;;;;;;;
+(require 'smartchr)
+(global-set-key (kbd "=") (smartchr '(" = " " == " "=")))
+(global-set-key (kbd ",") (smartchr '(" , " ", " ",")))
+(global-set-key (kbd "+") (smartchr '(" + " "+")))
+(global-set-key (kbd "-") (smartchr '(" - " "-")))
+(global-set-key (kbd "*") (smartchr '(" * " "*")))
+(global-set-key (kbd "/") (smartchr '(" / " "/")))
+(global-set-key (kbd "<") (smartchr '(" < " "<")))
+(global-set-key (kbd ">") (smartchr '(" > " ">")))
+
+;;         ("=>" . " => ")
+;;         ("=~" . " =~ ")
+;;         ("=*" . " =* ")
+;;         ("-=" . " -= ")
+;;         ("->" . " -> ")
+;;         (">"  . (" > " " => " " >= " ">"))
+;;         (">=" . " >= ")
+;;         ("%"  . (" % " " %= " "%"))
+;;         ("%="  . " %= ")
+;;         ("!" . (" != " " !~ " "!"))
+;;         ("!="  . " != " )
+;;         ("!~" . " !~ ")
+;;         ("~" . (" =~ " "~"))
+;;         ("::" . " :: ")
+;;         ("&"  . (" & " " && " "&"))
+;;         ("&=" . " &= ")
+;;         ("&&=" . " &&= ")
+;;         ("*="  . " *= " )
+;;         ("<" . (" < " " <= " "<"))
+;;         ("<=" . " <= ")
+;;         ("<<=" . " <<= ")
+;;         ("<-" . " <- ")
+;;         ("|=" . " |= ")
+;;         ("||=" . " ||= ")
+;;         ("/=" . " /= ")
 
 ;;;;;;;;;;;;;;;;;;;;Flycheck;;;;;;;;;;;;;;;;;;;;
 (add-hook 'after-init-hook #'global-flycheck-mode)
