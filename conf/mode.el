@@ -157,3 +157,6 @@
       (append
        '(("\\.c$" . "gcc -g3 -Wall -O0 %f -o %n"))
        smart-compile-alist))
+
+;;;;;;;;;;;;;;;;;;;;gdb;;;;;;;;;;;;;;;;;;;;
+(require 'gdb-mi)

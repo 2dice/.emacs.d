@@ -50,3 +50,9 @@
                (define-key c-mode-map (kbd "M-c") 'smart-compile)
                )))
 
+;gdb
+(add-hook 'c-mode-hook
+          '(lambda()
+             (progn
+               (define-key c-mode-map (kbd "M-g") 'gud-gdb)
+               )))
