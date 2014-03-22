@@ -40,7 +40,9 @@
     flycheck-pos-tip
     google-c-style
     flex-autopair
+    flycheck-google-cpplint
     ))
+
 ;上記パッケージがなければ自動インストール
 (let ((not-installed (loop for x in installing-package-list
                             when (not (package-installed-p x))
