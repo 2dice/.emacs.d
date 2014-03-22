@@ -155,5 +155,5 @@
 (require 'smart-compile)
 (setq smart-compile-alist
       (append
-       '(("\\.c$" . "gcc -g -Wall -O0 %f -o %n && ./%n"))
+       '(("\\.c$" . "gcc -g3 -Wall -O0 %f -o %n"))
        smart-compile-alist))
