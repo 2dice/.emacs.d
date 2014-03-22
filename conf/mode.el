@@ -151,3 +151,9 @@
   '(custom-set-variables
    '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages)))
 
+;;;;;;;;;;;;;;;;;;;;smart-compile;;;;;;;;;;;;;;;;;;;;
+(require 'smart-compile)
+(setq smart-compile-alist
+      (append
+       '(("\\.c$" . "gcc -g -Wall -O0 %f -o %n && ./%n"))
+       smart-compile-alist))

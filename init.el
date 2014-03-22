@@ -41,6 +41,7 @@
     google-c-style
     flex-autopair
     flycheck-google-cpplint
+    smart-compile
     ))
 
 ;上記パッケージがなければ自動インストール
