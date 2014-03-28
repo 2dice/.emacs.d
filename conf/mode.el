@@ -160,3 +160,26 @@
 
 ;;;;;;;;;;;;;;;;;;;;gdb;;;;;;;;;;;;;;;;;;;;
 (require 'gdb-mi)
+
+;;;;;;;;;;;;;;;;;;;sdic;;;;;;;;;;;;;;;;;;;;
+(setq sdic-eiwa-dictionary-list '(
+	(sdicf-client "~/.emacs.d/dict/gene.sdic")
+	))
+(setq sdic-waei-dictionary-list '(
+	(sdicf-client "~/.emacs.d/dict/jedict.sdic")
+	))
+(autoload 'sdic-describe-word "sdic" "英単語の意味を調べる" t nil)
+(autoload 'sdic-describe-word-at-point "sdic" "カーソルの位置の英単語の意味を調べる" t nil)
+;; 文字色
+(setq sdic-face-color "pink")
+
+;;;;;;;;;;;;;;;;;;;;sdic-inline;;;;;;;;;;;;;;;;;;;;
+(require 'sdic-inline)
+(sdic-inline-mode t)   ; sdic-inline モードの起動
+;; 辞書ファイルの設定
+(setq sdic-inline-eiwa-dictionary "~/.emacs.d/dict/gene.sdic")
+(setq sdic-inline-waei-dictionary "~/.emacs.d/dict/jedict.sdic")
+(setq sdic-inline-not-search-style 'point) ; デフォルト値。ポイント位置が前回と同じである限り、再度辞書ではひかない。
+(setq sdic-inline-not-search-style 'word)  ; カーソル下の単語が前回辞書で引いた単語と同じである限り、再度辞書ではひかない。
+(setq sdic-inline-not-search-style 't)     ; sdic-inline-delay に定められた秒数毎にポイント下の単語を辞書でひく。
+(setq sdic-inline-search-func 'sdic-inline-search-word-with-stem)
