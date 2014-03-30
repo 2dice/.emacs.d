@@ -170,6 +170,8 @@
 	))
 (autoload 'sdic-describe-word "sdic" "英単語の意味を調べる" t nil)
 (autoload 'sdic-describe-word-at-point "sdic" "カーソルの位置の英単語の意味を調べる" t nil)
+;;文字エンコード
+(setq sdic-default-coding-system 'euc-jp)
 ;; 文字色
 (setq sdic-face-color "pink")
 
