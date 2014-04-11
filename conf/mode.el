@@ -51,14 +51,14 @@
 (require 'point-undo)
 
 ;;;;;;;;;;;;;;;;;;;;smartparens;;;;;;;;;;;;;;;;;;;;
-;(require 'smartparens-config)
-;(smartparens-global-mode t)
+(require 'smartparens-config)
+(smartparens-global-mode t)
 
 ;;;;;;;;;;;;;;;;;;;;flex-autopair;;;;;;;;;;;;;;;;;;;;
-(require 'flex-autopair)
-(flex-autopair-mode 1)
-(setq flex-autopair-disable-modes
-        '(c-mode))
+;(require 'flex-autopair)
+;(flex-autopair-mode 1)
+;(setq flex-autopair-disable-modes
+;        '(c-mode))
 
 ;;;;;;;;;;;;;;;;;;;;recentf;;;;;;;;;;;;;;;;;;;;
 (require 'recentf-ext)
@@ -105,16 +105,15 @@
 (require 'expand-region)
 
 ;;;;;;;;;;;;;;;;;;;;smartchr;;;;;;;;;;;;;;;;;;;;
-(require 'smartchr)
-(global-set-key (kbd "=") (smartchr '("=" " = " " == ")))
-(global-set-key (kbd ",") (smartchr '("," ", ")))
-(global-set-key (kbd "+") (smartchr '("+" " + ")))
-(global-set-key (kbd "-") (smartchr '("-" " - ")))
-(global-set-key (kbd "*") (smartchr '("*" " * ")))
-(global-set-key (kbd "/") (smartchr '("/" " / ")))
-(global-set-key (kbd "<") (smartchr '("<" " < ")))
-(global-set-key (kbd ">") (smartchr '(">" " > ")))
-
+;(require 'smartchr)
+;(global-set-key (kbd "=") (smartchr '("=" " = " " == ")))
+;(global-set-key (kbd ",") (smartchr '("," ", ")))
+;(global-set-key (kbd "+") (smartchr '("+" " + ")))
+;(global-set-key (kbd "-") (smartchr '("-" " - ")))
+;(global-set-key (kbd "*") (smartchr '("*" " * ")))
+;(global-set-key (kbd "/") (smartchr '("/" " / ")))
+;(global-set-key (kbd "<") (smartchr '("<" " < ")))
+;(global-set-key (kbd ">") (smartchr '(">" " > ")))
 ;;         ("=>" . " => ")
 ;;         ("=~" . " =~ ")
 ;;         ("=*" . " =* ")
