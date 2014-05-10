@@ -73,6 +73,9 @@ backup-directory-alist))
 ;C言語設定
 (load "c")
 
+;frame設定
+(load "frame")
+
 ;emacsclientの設定
 (require 'server)
 (unless (server-running-p)
