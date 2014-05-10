@@ -30,7 +30,7 @@
 ;(define-key evil-normal-state-map ">" 'point-redo)
 
 (define-key evil-motion-state-map (kbd "C-]") nil)
-(define-key evil-motion-state-map (kbd "C-]") 'find-tag)
+(define-key evil-motion-state-map (kbd "C-]") 'find-tag-other-frame)
 
 (define-key evil-normal-state-map "+" 'evil-numbers/inc-at-pt)
 (define-key evil-normal-state-map "-" 'evil-numbers/dec-at-pt)
