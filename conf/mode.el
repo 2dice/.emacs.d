@@ -27,7 +27,9 @@
 
 ;;;;;;;;;;;;;;;;;;;;dired;;;;;;;;;;;;;;;;;;;;
 ;diredで削除したファイルをゴミ箱に入れる
-(setq delete-by-moving-to-trash t)
+(custom-set-variables
+ '(delete-by-moving-to-trash t)
+ '(trash-directory "~/.Trash"))
 ;よけいな情報を出さない
 (setq dired-listing-switches "-alGgh")
 ;diredに新規ファイル作成コマンドを追加
