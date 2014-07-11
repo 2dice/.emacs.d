@@ -4,7 +4,6 @@
   "/" #'comment-dwim
   "=" #'align-regexp
   "b" #'helm-buffers-list
-  "c" #'dired-create-file
   "d" #'dired
   "D" #'dired-other-frame
   "e" #'ediff-buffers
@@ -21,6 +20,8 @@
   "u" #'undo-tree-visualize
   )
 
+(add-hook 'dired-load-hook (lambda ()
+  (define-key dired-mode-map "c" 'dired-create-file)))
 
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
 
