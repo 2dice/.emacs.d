@@ -1,7 +1,7 @@
 ;;evil-leaderのキーバインド
 (evil-leader/set-leader "SPC")
 (evil-leader/set-key
-  "/" #'comment-region
+  "/" #'comment-dwim
   "=" #'align-regexp
   "b" #'helm-buffers-list
   "c" #'dired-create-file
