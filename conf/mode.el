@@ -8,6 +8,38 @@
 (load "evil-setting")
 (require 'evil-numbers)
 
+;;;;;;;;;;;;;;;;;;;;tabbar;;;;;;;;;;;;;;;;;;;;
+;; (require 'tabbar)
+;; (tabbar-mode 1)
+;; (tabbar-mwheel-mode -1)
+;; ;; グループ化しない
+;; (setq tabbar-buffer-groups-function nil)
+;; ;; 左に表示されるボタンを無効化
+;; (dolist (btn '(tabbar-buffer-home-button
+;;                tabbar-scroll-left-button
+;;                tabbar-scroll-right-button))
+;;   (set btn (cons (cons "" nil)
+;;                  (cons "" nil))))
+;; ;; タブセパレータの長さ
+;; (setq tabbar-separator '(0.2))
+;:background "#002c37"
+;;                     :height 1.0)
+;; (set-face-attribute 'tabbar-unselected nil
+;;                     :foreground "#002c37"
+;;                     :background "#c4c1b0"
+;;                     :box nil)
+;; (set-face-attribute 'tabbar-selected nil
+;;                     :foreground "#e4007e"
+;;                     :background "#c4c1b0"
+;;                     ;; :background "#ffffff"
+;;                     :box nil)
+;; (set-face-attribute 'tabbar-button nil
+;;                     :box nil)
+;; (set-face-attribute 'tabbar-separator nil
+;;                     :foreground "#002c37"
+;;                     :background "#002c37"
+;;                     :height 1.0)
+
 ;;;;;;;;;;;;;;;;;;;;yasnippet;;;;;;;;;;;;;;;;;;;;
 (require 'yasnippet)
 (yas/global-mode 1)

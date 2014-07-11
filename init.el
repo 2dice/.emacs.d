@@ -25,6 +25,7 @@
     evil-numbers
     yasnippet
     auto-complete
+    ;; tabbar
     slime
     ac-slime
     popwin
