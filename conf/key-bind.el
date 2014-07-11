@@ -1,5 +1,5 @@
 ;;evil-leaderのキーバインド
-(evil-leader/set-leader "_")
+(evil-leader/set-leader "SPC")
 (evil-leader/set-key
   "/" #'comment-region
   "=" #'align-regexp
