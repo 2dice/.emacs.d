@@ -13,7 +13,7 @@
   "m" #'ediff-merge-buffers
   "n" #'new-frame
   "o" #'other-frame
-  "o" #'(lambda () "" (interactive) (other-frame -1))
+  "O" #'(lambda () "" (interactive) (other-frame -1))
   "p" #'helm-show-kill-ring
   "r" #'helm-recentf
   "s" #'shell-pop
