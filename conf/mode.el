@@ -81,6 +81,10 @@
 ;;;;;;;;;;;;;;;;;;;;ediff;;;;;;;;;;;;;;;;;;;;
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
+;;;;;;;;;;;;;;;;;;;;undohist;;;;;;;;;;;;;;;;;;;;
+(require 'undohist)
+(undohist-initialize)
+
 ;;;;;;;;;;;;;;;;;;;;point-undo;;;;;;;;;;;;;;;;;;;;
 (require 'point-undo)
 

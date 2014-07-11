@@ -33,6 +33,7 @@
     helm
     color-theme
     ;; point-undo
+    undohist
     smartparens
     recentf-ext
     smooth-scrolling
