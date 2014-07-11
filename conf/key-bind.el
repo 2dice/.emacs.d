@@ -30,6 +30,8 @@
 ;; (global-set-key [(C-tab)]   'tabbar-forward-tab)
 ;; (global-set-key [(C-S-tab)] 'tabbar-backward-tab)
 
+;; (define-key evil-normal-state-map "<" 'point-undo)
+;; (define-key evil-normal-state-map ">" 'point-redo)
 
 (define-key evil-motion-state-map (kbd "C-]") nil)
 (define-key evil-motion-state-map (kbd "C-]") 'find-tag-other-frame)

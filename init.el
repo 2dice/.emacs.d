@@ -32,7 +32,7 @@
     shell-pop
     helm
     color-theme
-    point-undo
+    ;; point-undo
     smartparens
     recentf-ext
     smooth-scrolling
